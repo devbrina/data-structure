@@ -90,7 +90,6 @@ public class IntArray {
         return -1; // Return -1 if 'n' is not found.
     }
     public int binarySearch(int target) {
-
         int left = 0;
         int right = arr.length - 1;
 

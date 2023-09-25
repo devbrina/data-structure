@@ -1,4 +1,4 @@
-import src.IntArray;
+package src;
 public class Stack extends IntArray {
     int top;
     public Stack(int capacity) {
