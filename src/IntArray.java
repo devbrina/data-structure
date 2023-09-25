@@ -1,9 +1,12 @@
 package src;
+import java.util.Scanner;
 
 public class IntArray {
+    private Scanner scanner;
     private int[] arr;
     private int capacity;
     private int size;
+
 
     public IntArray(int capacity) {
         arr = new int[capacity];
@@ -25,6 +28,10 @@ public class IntArray {
         }
         return arr[i];
     }
+    protected int[] getArray() {
+        return arr;
+    }
+
 
     public void set(int i, int n) throws IndexOutOfBoundsException {
         if (i < 0 || i >= size) {
